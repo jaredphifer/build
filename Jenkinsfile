@@ -33,10 +33,6 @@ pipeline {
 		}
 		
 		stage('Deploy to stage?') {agent none
-			when {
-                branch 'stage'
-                
-            }
             step {
 				input 'Deploy to stage?'
 			}
